@@ -17,10 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "erbt"
   gem.homepage = "http://github.com/akiradeveloper/erbt"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{erb template}
+  gem.description = %Q{manage your setups by the elegant erb}
   gem.email = "ruby.wktk@gmail.com"
   gem.authors = ["Akira Hayakawa"]
+  gem.files = FileList["lib/**/*.rb"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
