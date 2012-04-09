@@ -1,1 +1,1 @@
-require File.expand_path(__FILE__ + '/internal/erbt')
+require File.dirname(__FILE__) + '/internal/erbt'

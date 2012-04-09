@@ -1,0 +1,10 @@
+require 'erbt'
+
+task 'test' do
+  erbt("test1")
+  print File.read("test1")
+  erbt("test1")
+  `echo "" > test1`
+  erbt("test1")
+  print File.read("test1")
+end

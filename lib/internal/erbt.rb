@@ -1,11 +1,11 @@
 def erbt(path)
   path = File.expand_path(path)
+  `touch #{path}`
   template = path + '.template'
   unless File.exist?(template)
     raise ArgumentError.new(".template does not exist!")
   end
   product = `erb #{template}`
-  print product
   if File.read(path) != product
     backup = path + ".backup"
     puts "#{path} will be changed."

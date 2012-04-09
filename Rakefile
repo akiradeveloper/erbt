@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/akiradeveloper/erbt"
   gem.license = "MIT"
   gem.summary = %Q{erb template}
-  gem.description = %Q{manage your setups by the elegant erb}
+  gem.description = %Q{manage your configuration with erb}
   gem.email = "ruby.wktk@gmail.com"
   gem.authors = ["Akira Hayakawa"]
   gem.files = FileList["lib/**/*.rb"]

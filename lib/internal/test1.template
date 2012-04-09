@@ -1,0 +1,8 @@
+<%=
+n = 10
+ret = 'akira'
+if(n > 5)
+  ret += 'developer'
+end
+ret
+%>
