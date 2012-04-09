@@ -1,4 +1,4 @@
-def erbt(path)
+def __erbt(path)
   path = File.expand_path(path)
   `touch #{path}`
   template = path + '.template'
@@ -17,6 +17,15 @@ def erbt(path)
   f.close
 end
 
+def erbt(path)
+  path = File.expand_path(path)
+  file path => [path + '.template'] do
+    __erbt(path)
+  end
+  desc("erbt all")
+  task 'erbt' => [path]
+end
+
 if __FILE__ == $0
-  erbt('test1')
+  __erbt('test1')
 end

@@ -1,10 +1,19 @@
 require 'erbt'
 
+desc "test"
 task 'test' do
-  erbt("test1")
+  __erbt("test1")
   print File.read("test1")
-  erbt("test1")
+  __erbt("test1")
   `echo "" > test1`
-  erbt("test1")
+  __erbt("test1")
   print File.read("test1")
+end
+
+erbt "test1"
+
+desc "clean"
+task 'clean' do
+  `rm test1`
+  `rm test1.backup`
 end
